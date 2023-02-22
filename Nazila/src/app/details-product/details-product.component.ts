@@ -4,6 +4,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { IProducts } from '../IProducts';
 import { products } from '../products';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-details-product',
@@ -15,18 +16,23 @@ export class DetailsProductComponent implements OnInit {
   id: number = 0;
 
   constructor(
-    private route: ActivatedRoute
-    
-  ) { }
+    private route: ActivatedRoute,
+    private cartService: CartService
 
-  ngOnInit(){
-   
-    this.route.params.subscribe((params:Params) => {
+  ) { }
+  addToCart() {
+this.cartService.addToCartasService(this.productDetail);
+
+  }
+
+  ngOnInit() {
+
+    this.route.params.subscribe((params: Params) => {
       // console.log(params);
       this.id = +params['id'];
-      this.productDetail=products[this.id];
+      this.productDetail = products[this.id];
       // console.log(this.productDetail);
-//  
+      //  
     });
   }
 }

@@ -7,7 +7,7 @@
                     <h5 class="card-title">{{ productDetail.name }}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{ productDetail.price }}</h6>
                     <p class="card-text">{{ productDetail.description }}</p>
-                    <a href="#" class="card-link mt-auto">Add to cart</a>
+                    <button class="card-link mt-auto" role="button" (click)="addToCart()">Add to cart</button>
                     <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>

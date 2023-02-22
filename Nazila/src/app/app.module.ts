@@ -9,6 +9,7 @@ import { CartComponent } from './cart/cart.component';
 import { OurProductComponent } from './our-product/our-product.component';
 import { DetailsProductComponent } from './details-product/details-product.component';
 import { HeroHomeComponent } from './hero-home/hero-home.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeroHomeComponent } from './hero-home/hero-home.component';
     CartComponent,
     OurProductComponent,
     DetailsProductComponent,
-    HeroHomeComponent
+    HeroHomeComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

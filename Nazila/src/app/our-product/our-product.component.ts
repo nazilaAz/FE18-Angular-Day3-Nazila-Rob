@@ -8,6 +8,6 @@ import { products } from '../products';
   styleUrls: ['./our-product.component.css']
 })
 export class OurProductComponent {
-  ourProduct: IProducts[] = products;
+  ourProduct: Array<IProducts> = products;
 
 }

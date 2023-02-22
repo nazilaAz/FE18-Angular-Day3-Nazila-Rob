@@ -2,3 +2,7 @@
     background-color: #3A98B9;
     font-weight: bold;
 }
+
+.btn {
+    display: block;
+}

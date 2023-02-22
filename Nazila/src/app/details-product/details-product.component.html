@@ -1,1 +1,18 @@
-<p>details-product works!</p>
+<div class="container text-center" *ngIf="productDetail">
+    <h3 class="h3">{{ productDetail.name }}</h3>
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">{{ productDetail.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ productDetail.price }}</h6>
+                    <p class="card-text">{{ productDetail.description }}</p>
+                    <a href="#" class="card-link mt-auto">Add to cart</a>
+                    <!-- <a href="#" class="card-link">Another link</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <img src="../../assets/images/{{ productDetail.pic }}" class="img-thumbnail" alt="shop">
+        </div>
+    </div>
